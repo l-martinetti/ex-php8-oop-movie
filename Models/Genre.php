@@ -10,6 +10,6 @@
         }
 
         public function getGenre() {
-            return self::$genre;
+            return $this -> genre;
         }
     }

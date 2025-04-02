@@ -4,11 +4,13 @@ require_once './Models/Genre.php';
 
 // dichiarazione generi interessanti
 $romantico = new Genre("Romantico");
+$guerra = new Genre("Guerra");
 $fantascienza = new Genre("Fantascienza");
+$azione = new Genre("Guerra");
 
 // creazione due istanze di classe Movie
-$via_col_vento = new Movie("Via col vento", 1939, 136, $romantico);
-$blade_runner = new Movie("Bladerunner", 1982, 238, $fantascienza);
+$via_col_vento = new Movie("Via col vento", 1939, 136, [$romantico, $guerra]);
+$blade_runner = new Movie("Bladerunner", 1982, 238, [$fantascienza, $azione]);
 
 ?>
 <!DOCTYPE html>

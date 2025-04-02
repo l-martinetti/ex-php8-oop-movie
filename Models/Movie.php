@@ -6,14 +6,14 @@ class Movie {
     public $title; 
     public $year;
     public $duration;
-    public $genre;
+    public $genres = [];
 
     // costruttore
-    function __construct($_title, $_year, $_duration, Genre $_genre) {
+    function __construct($_title, $_year, $_duration, array $_genres) {
         $this -> title = $_title;
         $this -> year = $_year;
         $this -> duration = $_duration;
-        $this -> genre = $_genre;
+        $this -> genres = $_genres;
     }
 
     // metodo per sapere la durata
